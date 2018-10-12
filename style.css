@@ -1,3 +1,6 @@
+body {
+    background-color: rgb(19, 14, 87)
+ }
 .parent > div{
     border: solid;
 }
@@ -20,21 +23,59 @@
 }
 .box1{
     grid-area: box1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    background-color: rgb(14, 62, 151);
+    color: aliceblue;
 }
+
 .box2{
     grid-area: box2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    background-color: rgb(14, 62, 151);
+    color: aliceblue;
 }
 .box3{
     grid-area: box3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    background-color: rgb(14, 62, 151);
+    color: aliceblue;
 }
 .box4{
     grid-area: box4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    background-color: rgb(14, 62, 151);
+    color: aliceblue;
 }
 .box5{
     grid-area: box5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    background-color: rgb(14, 62, 151);
+    color: aliceblue;
 }
 .box6{
     grid-area: box6;
+    display: flex;
+    font-size: 80px;
 }
 .box7{
     grid-area: box7;
@@ -79,6 +120,12 @@
     grid-area: box20;
 }
 
-.h1 {
-    font-family: 'Monoton', cursive;
+.img{
+    margin-left: 550px
+    
+}
+#points{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

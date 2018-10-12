@@ -6,29 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script defer src="main.js"></script>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Orbitron" rel="stylesheet">
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
-
-    <h1>JEOPARDY!</h1>
+    <div><img class = "img" src="https://vignette.wikia.nocookie.net/gameshows/images/4/46/Logo-3d.gif/revision/latest?cb=20131219001610" alt="Italian Trulli"></div>
+    <div class="btn btn-primary btn-sm" id="points">
+    <h2>000</h2></div>
     <div class="parent">
         <div class="box1">Music</div>
         <div class="box2">Movies</div>
         <div class="box3">States</div>
         <div class="box4">Sports</div>
         <div class="box5">Brands</div>
-        <button type="box6" class="btn btn-primary" data-toggle="modal" data-target="#one">
+        <button type="box6" class="btn btn-primary" id="box6" data-toggle="modal" data-target="#one">
             $100</button>
         <button type="box7" class="btn btn-primary" data-toggle="modal" data-target="#two">
             $100</button>
@@ -66,19 +69,19 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="one">Modal title</h5>
+                    <h5 class="modal-title" id="one">Music $100</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    Who sings "Hotline Bling"?
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="one">Drake</button>
+                    <button type="button" class="btn btn-primary" id="two">Snoop Dogg</button>
+                    <button type="button" class="btn btn-primary" id="three">Kendrick Lamar</button>
+                    <button type="button" class="btn btn-secondary" id="four" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -141,7 +144,7 @@
                     ...
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary" id="box4">Dave changes</button>
                     <button type="button" class="btn btn-primary">Save changes</button>
                     <button type="button" class="btn btn-primary">Save changes</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -216,7 +219,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="eigth" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="eight" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
