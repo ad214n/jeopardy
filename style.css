@@ -121,7 +121,8 @@ body {
 }
 
 .img{
-    margin-left: 550px
+    margin-left: 400px;
+    width: 40%;
     
 }
 #points{
