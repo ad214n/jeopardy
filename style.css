@@ -74,8 +74,16 @@ body {
 }
 .box6{
     grid-area: box6;
+       
+}
+#box6 {
     display: flex;
-    font-size: 80px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    background-color: rgb(14, 62, 151);
+    color: rgb(217, 226, 41);
 }
 .box7{
     grid-area: box7;
@@ -130,3 +138,4 @@ body {
     align-items: center;
     justify-content: center;
 }
+

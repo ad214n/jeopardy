@@ -270,6 +270,3 @@ let c = document.querySelector("#no2");
         scores -= 100
         points.innerHTML = scores
     })
-
-
-
