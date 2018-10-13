@@ -88,44 +88,171 @@ body {
 .box7{
     grid-area: box7;
 }
+#box7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    background-color: rgb(14, 62, 151);
+    color: rgb(217, 226, 41);  
+}
 .box8{
     grid-area: box8;
+}
+#box8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    background-color: rgb(14, 62, 151);
+    color: rgb(217, 226, 41);
 }
 .box9{
     grid-area: box9;
 }
+#box9{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    background-color: rgb(14, 62, 151);
+    color: rgb(217, 226, 41);
+}
 .box10{
     grid-area: box10;
 }
+#box10{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    background-color: rgb(14, 62, 151);
+    color: rgb(217, 226, 41);
+}
+
 .box11{
     grid-area: box11;
+}
+#box11{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    background-color: rgb(14, 62, 151);
+    color: rgb(217, 226, 41);
 }
 .box12{
     grid-area: box12;
 }
+#box12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    background-color: rgb(14, 62, 151);
+    color: rgb(217, 226, 41);
+}
 .box13{
     grid-area: box13;
+}
+#box13{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    background-color: rgb(14, 62, 151);
+    color: rgb(217, 226, 41);
 }
 .box14{
     grid-area: box14;
 }
+#box14{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    background-color: rgb(14, 62, 151);
+    color: rgb(217, 226, 41);
+}
 .box15{
     grid-area: box15;
+}
+#box15{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    background-color: rgb(14, 62, 151);
+    color: rgb(217, 226, 41);
 }
 .box16{
     grid-area: box16;
 }
+#box16 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    background-color: rgb(14, 62, 151);
+    color: rgb(217, 226, 41);
+}
 .box17{
     grid-area: box17;
+}
+#box17{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    background-color: rgb(14, 62, 151);
+    color: rgb(217, 226, 41);
 }
 .box18{
     grid-area: box18;
 }
+#box18{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    background-color: rgb(14, 62, 151);
+    color: rgb(217, 226, 41);
+}
 .box19{
     grid-area: box19;
 }
+#box19{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    background-color: rgb(14, 62, 151);
+    color: rgb(217, 226, 41);
+}
 .box20{
     grid-area: box20;
+}
+#box20{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    background-color: rgb(14, 62, 151);
+    color: rgb(217, 226, 41);
 }
 
 .img{
