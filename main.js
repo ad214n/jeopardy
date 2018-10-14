@@ -1,4 +1,4 @@
-let points = document.querySelector("h2");
+let points = document.querySelector("#points");
 
 let scores = 0;
 let a = document.querySelector("#answer");
@@ -8,7 +8,9 @@ let c = document.querySelector("#no2");
     a.addEventListener('click', function(){
         scores += 100
         points.innerHTML = scores
-                     
+        if(points.innerHTML >=1000) {
+            alert('WINNER')
+        }            
         })
     b.addEventListener('click', function(){
         scores -= 100
