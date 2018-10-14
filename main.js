@@ -98,16 +98,16 @@ let c = document.querySelector("#no2");
     let r = document.querySelector("#red");
 
     p.addEventListener('click', function(){
-        scores += 100
+        scores += 200
         points.innerHTML = scores
                      
         })
     q.addEventListener('click', function(){
-        scores -= 100
+        scores -= 200
         points.innerHTML = scores
     })
     r.addEventListener('click', function(){
-        scores -= 100
+        scores -= 200
         points.innerHTML = scores
     })
 
@@ -116,16 +116,16 @@ let c = document.querySelector("#no2");
     let u = document.querySelector("#stop2");
 
     s.addEventListener('click', function(){
-        scores -= 100
+        scores -= 200
         points.innerHTML = scores
                      
         })
     t.addEventListener('click', function(){
-        scores += 100
+        scores += 200
         points.innerHTML = scores
     })
     u.addEventListener('click', function(){
-        scores -= 100
+        scores -= 200
         points.innerHTML = scores
     })
 
@@ -134,16 +134,16 @@ let c = document.querySelector("#no2");
     let x = document.querySelector("#false2");
 
     v.addEventListener('click', function(){
-        scores += 100
+        scores += 200
         points.innerHTML = scores
                      
         })
     w.addEventListener('click', function(){
-        scores -= 100
+        scores -= 200
         points.innerHTML = scores
     })
     x.addEventListener('click', function(){
-        scores -= 100
+        scores -= 200
         points.innerHTML = scores
     })
 
@@ -152,16 +152,16 @@ let c = document.querySelector("#no2");
     let zz = document.querySelector("#truth");
 
     y.addEventListener('click', function(){
-        scores -= 100
+        scores -= 200
         points.innerHTML = scores
                      
         })
     z.addEventListener('click', function(){
-        scores -= 100
+        scores -= 200
         points.innerHTML = scores
     })
     zz.addEventListener('click', function(){
-        scores += 100
+        scores += 200
         points.innerHTML = scores
     })
 
@@ -170,16 +170,16 @@ let c = document.querySelector("#no2");
     let a3 = document.querySelector("#mad");
 
     a1.addEventListener('click', function(){
-        scores += 100
+        scores += 200
         points.innerHTML = scores
                      
         })
     a2.addEventListener('click', function(){
-        scores -= 100
+        scores -= 200
         points.innerHTML = scores
     })
     a3.addEventListener('click', function(){
-        scores -= 100
+        scores -= 200
         points.innerHTML = scores
     })
 
@@ -188,16 +188,16 @@ let c = document.querySelector("#no2");
     let b3 = document.querySelector("#bw");
 
     b1.addEventListener('click', function(){
-        scores += 100
+        scores += 300
         points.innerHTML = scores
                      
         })
     b2.addEventListener('click', function(){
-        scores -= 100
+        scores -= 300
         points.innerHTML = scores
     })
     b3.addEventListener('click', function(){
-        scores -= 100
+        scores -= 300
         points.innerHTML = scores
     })
 
@@ -206,16 +206,16 @@ let c = document.querySelector("#no2");
     let c3 = document.querySelector("#ls");
 
     c1.addEventListener('click', function(){
-        scores -= 100
+        scores -= 300
         points.innerHTML = scores
                      
         })
     c2.addEventListener('click', function(){
-        scores += 100
+        scores += 300
         points.innerHTML = scores
     })
     c3.addEventListener('click', function(){
-        scores -= 100
+        scores -= 300
         points.innerHTML = scores
     })
 
@@ -224,16 +224,16 @@ let c = document.querySelector("#no2");
     let cc3 = document.querySelector("#ff");
 
     cc1.addEventListener('click', function(){
-        scores += 100
+        scores += 300
         points.innerHTML = scores
                      
         })
     cc2.addEventListener('click', function(){
-        scores -= 100
+        scores -= 300
         points.innerHTML = scores
     })
     cc3.addEventListener('click', function(){
-        scores -= 100
+        scores -= 300
         points.innerHTML = scores
     })
 
@@ -242,16 +242,16 @@ let c = document.querySelector("#no2");
     let d3 = document.querySelector("#cool");
 
     dd.addEventListener('click', function(){
-        scores -= 100
+        scores -= 300
         points.innerHTML = scores
                      
         })
     d2.addEventListener('click', function(){
-        scores -= 100
+        scores -= 300
         points.innerHTML = scores
     })
     d3.addEventListener('click', function(){
-        scores += 100
+        scores += 300
         points.innerHTML = scores
     })
 
@@ -260,15 +260,15 @@ let c = document.querySelector("#no2");
     let e3 = document.querySelector("#vvv");
 
     ee.addEventListener('click', function(){
-        scores -= 100
+        scores -= 300
         points.innerHTML = scores
                      
         })
     e2.addEventListener('click', function(){
-        scores += 100
+        scores += 300
         points.innerHTML = scores
     })
     e3.addEventListener('click', function(){
-        scores -= 100
+        scores -= 300
         points.innerHTML = scores
     })
