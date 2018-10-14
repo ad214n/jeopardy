@@ -73,10 +73,11 @@ body {
     background-color: rgb(14, 62, 151);
     color: aliceblue;
 }
+
 .box6{
-    grid-area: box6;
-       
+    grid-area: box6;       
 }
+
 #box6 {
     display: flex;
     align-items: center;
@@ -85,6 +86,9 @@ body {
     font-size: 30px;
     background-color: rgb(14, 62, 151);
     color: rgb(217, 226, 41);
+}
+#box6:hover {
+    background-color: rgb(101, 130, 228);
 }
 .box7{
     grid-area: box7;
@@ -98,6 +102,9 @@ body {
     background-color: rgb(14, 62, 151);
     color: rgb(217, 226, 41);  
 }
+#box7:hover {
+    background-color: rgb(101, 130, 228);
+}
 .box8{
     grid-area: box8;
 }
@@ -109,6 +116,9 @@ body {
     font-size: 30px;
     background-color: rgb(14, 62, 151);
     color: rgb(217, 226, 41);
+}
+#box8:hover {
+    background-color: rgb(101, 130, 228);
 }
 .box9{
     grid-area: box9;
@@ -122,6 +132,9 @@ body {
     background-color: rgb(14, 62, 151);
     color: rgb(217, 226, 41);
 }
+#box9:hover {
+    background-color: rgb(101, 130, 228);
+}
 .box10{
     grid-area: box10;
 }
@@ -134,7 +147,9 @@ body {
     background-color: rgb(14, 62, 151);
     color: rgb(217, 226, 41);
 }
-
+#box10:hover {
+    background-color: rgb(101, 130, 228);
+}
 .box11{
     grid-area: box11;
 }
@@ -146,6 +161,9 @@ body {
     font-size: 30px;
     background-color: rgb(14, 62, 151);
     color: rgb(217, 226, 41);
+}
+#box11:hover {
+    background-color: rgb(101, 130, 228);
 }
 .box12{
     grid-area: box12;
@@ -159,6 +177,9 @@ body {
     background-color: rgb(14, 62, 151);
     color: rgb(217, 226, 41);
 }
+#box12:hover {
+    background-color: rgb(101, 130, 228);
+}
 .box13{
     grid-area: box13;
 }
@@ -170,6 +191,9 @@ body {
     font-size: 30px;
     background-color: rgb(14, 62, 151);
     color: rgb(217, 226, 41);
+}
+#box13:hover {
+    background-color: rgb(101, 130, 228);
 }
 .box14{
     grid-area: box14;
@@ -183,6 +207,9 @@ body {
     background-color: rgb(14, 62, 151);
     color: rgb(217, 226, 41);
 }
+#box14:hover {
+    background-color: rgb(101, 130, 228);
+}
 .box15{
     grid-area: box15;
 }
@@ -194,6 +221,9 @@ body {
     font-size: 30px;
     background-color: rgb(14, 62, 151);
     color: rgb(217, 226, 41);
+}
+#box15:hover {
+    background-color: rgb(101, 130, 228);
 }
 .box16{
     grid-area: box16;
@@ -207,6 +237,9 @@ body {
     background-color: rgb(14, 62, 151);
     color: rgb(217, 226, 41);
 }
+#box16:hover {
+    background-color: rgb(101, 130, 228);
+}
 .box17{
     grid-area: box17;
 }
@@ -218,6 +251,9 @@ body {
     font-size: 30px;
     background-color: rgb(14, 62, 151);
     color: rgb(217, 226, 41);
+}
+#box17:hover {
+    background-color: rgb(101, 130, 228);
 }
 .box18{
     grid-area: box18;
@@ -231,6 +267,9 @@ body {
     background-color: rgb(14, 62, 151);
     color: rgb(217, 226, 41);
 }
+#box18:hover {
+    background-color: rgb(101, 130, 228);
+}
 .box19{
     grid-area: box19;
 }
@@ -243,6 +282,9 @@ body {
     background-color: rgb(14, 62, 151);
     color: rgb(217, 226, 41);
 }
+#box19:hover {
+    background-color: rgb(101, 130, 228);
+}
 .box20{
     grid-area: box20;
 }
@@ -254,6 +296,9 @@ body {
     font-size: 30px;
     background-color: rgb(14, 62, 151);
     color: rgb(217, 226, 41);
+}
+#box20:hover {
+    background-color: rgb(101, 130, 228);
 }
 
 .img{
@@ -268,4 +313,8 @@ body {
     color: rgb(217, 226, 41);
     font-size: 40px
 }
+
+
+
+
 
