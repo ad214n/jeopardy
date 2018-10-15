@@ -6,7 +6,22 @@ let b = document.querySelector("#no");
 let c = document.querySelector("#no2");
 
 // function to check if the game is over or not
-
+function checkWin() {
+    if (points.innerHTML >= 1000) {
+        swal({
+            type: 'success',
+            title: 'WINNER',
+            showConfirmButton: false
+        })
+    }
+    else if (points.innerHTML <= -100) {
+        swal({
+            type: 'fail',
+            Title: 'LOSER',
+            showConfirmButton: false
+        })
+    }
+}
 
 
 function disableButton(target) {
@@ -459,19 +474,3 @@ e3.addEventListener('click', function (event) {
     disableButton(eventTarget);
 })
 
-function checkWin() {
-    if (points.innerHTML >= 1000) {
-        swal({
-            type: 'success',
-            title: 'WINNER',
-            showConfirmButton: false
-        })
-    }
-    else if (points.innerHTML <= 0) {
-        swal({
-            type: 'fail',
-            Title: 'LOSER',
-            showConfirmButton: false
-        })
-    }
-}
