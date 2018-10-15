@@ -21,50 +21,7 @@ body {
     padding-right: 10px;
     padding-left: 10px;
 }
-.box1{
-    grid-area: box1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 40px;
-    background-color: rgb(14, 62, 151);
-    color: aliceblue;
-    
-}
-
-.box2{
-    grid-area: box2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 40px;
-    background-color: rgb(14, 62, 151);
-    color: aliceblue;
-}
-.box3{
-    grid-area: box3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 40px;
-    background-color: rgb(14, 62, 151);
-    color: aliceblue;
-}
-.box4{
-    grid-area: box4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 40px;
-    background-color: rgb(14, 62, 151);
-    color: aliceblue;
-}
-.box5{
-    grid-area: box5;
+.categoryBox{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,26 +31,7 @@ body {
     color: aliceblue;
 }
 
-.box6{
-    grid-area: box6;       
-}
-
-#box6 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 30px;
-    background-color: rgb(14, 62, 151);
-    color: rgb(217, 226, 41);
-}
-#box6:hover {
-    background-color: rgb(101, 130, 228);
-}
-.box7{
-    grid-area: box7;
-}
-#box7 {
+.questionBox{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,201 +40,129 @@ body {
     background-color: rgb(14, 62, 151);
     color: rgb(217, 226, 41);  
 }
+
+.box1{
+    grid-area: box1;
+    
+}
+.box2{
+    grid-area: box2;
+
+}
+.box3{
+    grid-area: box3;
+  
+}
+.box4{
+    grid-area: box4;
+    
+}
+.box5{
+    grid-area: box5;
+    
+}
+.box6{
+    grid-area: box6;       
+}
+
+#box6:hover {
+    background-color: rgb(101, 130, 228);
+}
+.box7{
+    grid-area: box7;
+}
+
 #box7:hover {
     background-color: rgb(101, 130, 228);
 }
 .box8{
     grid-area: box8;
 }
-#box8{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 30px;
-    background-color: rgb(14, 62, 151);
-    color: rgb(217, 226, 41);
-}
+
 #box8:hover {
     background-color: rgb(101, 130, 228);
 }
 .box9{
     grid-area: box9;
 }
-#box9{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 30px;
-    background-color: rgb(14, 62, 151);
-    color: rgb(217, 226, 41);
-}
+
 #box9:hover {
     background-color: rgb(101, 130, 228);
 }
 .box10{
     grid-area: box10;
 }
-#box10{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 30px;
-    background-color: rgb(14, 62, 151);
-    color: rgb(217, 226, 41);
-}
+
 #box10:hover {
     background-color: rgb(101, 130, 228);
 }
 .box11{
     grid-area: box11;
 }
-#box11{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 30px;
-    background-color: rgb(14, 62, 151);
-    color: rgb(217, 226, 41);
-}
+
 #box11:hover {
     background-color: rgb(101, 130, 228);
 }
 .box12{
     grid-area: box12;
 }
-#box12{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 30px;
-    background-color: rgb(14, 62, 151);
-    color: rgb(217, 226, 41);
-}
+
 #box12:hover {
     background-color: rgb(101, 130, 228);
 }
 .box13{
     grid-area: box13;
 }
-#box13{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 30px;
-    background-color: rgb(14, 62, 151);
-    color: rgb(217, 226, 41);
-}
+
 #box13:hover {
     background-color: rgb(101, 130, 228);
 }
 .box14{
     grid-area: box14;
 }
-#box14{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 30px;
-    background-color: rgb(14, 62, 151);
-    color: rgb(217, 226, 41);
-}
+
 #box14:hover {
     background-color: rgb(101, 130, 228);
 }
 .box15{
     grid-area: box15;
 }
-#box15{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 30px;
-    background-color: rgb(14, 62, 151);
-    color: rgb(217, 226, 41);
-}
+
 #box15:hover {
     background-color: rgb(101, 130, 228);
 }
 .box16{
     grid-area: box16;
 }
-#box16 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 30px;
-    background-color: rgb(14, 62, 151);
-    color: rgb(217, 226, 41);
-}
+
 #box16:hover {
     background-color: rgb(101, 130, 228);
 }
 .box17{
     grid-area: box17;
 }
-#box17{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 30px;
-    background-color: rgb(14, 62, 151);
-    color: rgb(217, 226, 41);
-}
+
 #box17:hover {
     background-color: rgb(101, 130, 228);
 }
 .box18{
     grid-area: box18;
 }
-#box18{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 30px;
-    background-color: rgb(14, 62, 151);
-    color: rgb(217, 226, 41);
-}
+
 #box18:hover {
     background-color: rgb(101, 130, 228);
 }
 .box19{
     grid-area: box19;
 }
-#box19{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 30px;
-    background-color: rgb(14, 62, 151);
-    color: rgb(217, 226, 41);
-}
+
 #box19:hover {
     background-color: rgb(101, 130, 228);
 }
 .box20{
     grid-area: box20;
 }
-#box20{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 30px;
-    background-color: rgb(14, 62, 151);
-    color: rgb(217, 226, 41);
-}
+
 #box20:hover {
     background-color: rgb(101, 130, 228);
 }
