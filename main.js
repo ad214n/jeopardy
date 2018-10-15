@@ -17,9 +17,11 @@ function disableButton(target) {
     targetButton.classList.add("disabled");
 }
 
+
 a.addEventListener('click', function(event){
     scores += 100
     points.innerHTML = scores
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -27,6 +29,7 @@ a.addEventListener('click', function(event){
 b.addEventListener('click', function(event){
     scores -= 100
     points.innerHTML = scores
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -34,6 +37,7 @@ b.addEventListener('click', function(event){
 c.addEventListener('click', function(event){
     scores -= 100
     points.innerHTML = scores
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -46,6 +50,7 @@ let f = document.querySelector("#wrong2");
 d.addEventListener('click', function(event){
     scores -= 100;
     points.innerHTML = scores;
+    checkWin();
     
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);         
@@ -53,6 +58,7 @@ d.addEventListener('click', function(event){
 e.addEventListener('click', function(event){
     scores += 100;
     points.innerHTML = scores;
+    checkWin();
     
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -60,6 +66,7 @@ e.addEventListener('click', function(event){
 f.addEventListener('click', function(event){
     scores -= 100;
     points.innerHTML = scores;
+    checkWin();
     
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -72,6 +79,7 @@ let i = document.querySelector("#correct");
 g.addEventListener('click', function(event){
     scores -= 100
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -80,6 +88,7 @@ g.addEventListener('click', function(event){
 h.addEventListener('click', function(event){
     scores -= 100
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -87,6 +96,7 @@ h.addEventListener('click', function(event){
 i.addEventListener('click', function(event){
     scores += 100
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -99,6 +109,7 @@ let l = document.querySelector("#incorrect2");
 j.addEventListener('click', function(event){
     scores += 100
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -107,6 +118,7 @@ j.addEventListener('click', function(event){
 k.addEventListener('click', function(event){
     scores -= 100
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -114,6 +126,7 @@ k.addEventListener('click', function(event){
 l.addEventListener('click', function(event){
     scores -= 100
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -126,6 +139,7 @@ let o = document.querySelector("#bad2");
 m.addEventListener('click', function(event){
     scores -= 100
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -134,6 +148,7 @@ m.addEventListener('click', function(event){
 n.addEventListener('click', function(event){
     scores += 100
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -141,6 +156,7 @@ n.addEventListener('click', function(event){
 o.addEventListener('click', function(event){
     scores -= 100
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -153,6 +169,7 @@ let r = document.querySelector("#red");
 p.addEventListener('click', function(event){
     scores += 200
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -161,6 +178,7 @@ p.addEventListener('click', function(event){
 q.addEventListener('click', function(event){
     scores -= 200
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -168,6 +186,7 @@ q.addEventListener('click', function(event){
 r.addEventListener('click', function(event){
     scores -= 200
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -180,6 +199,7 @@ let u = document.querySelector("#stop2");
 s.addEventListener('click', function(event){
     scores -= 200
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -188,6 +208,7 @@ s.addEventListener('click', function(event){
 t.addEventListener('click', function(event){
     scores += 200
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -195,6 +216,7 @@ t.addEventListener('click', function(event){
 u.addEventListener('click', function(event){
     scores -= 200
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -207,6 +229,7 @@ let x = document.querySelector("#false2");
 v.addEventListener('click', function(event){
     scores += 200
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -215,6 +238,7 @@ v.addEventListener('click', function(event){
 w.addEventListener('click', function(event){
     scores -= 200
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -222,6 +246,7 @@ w.addEventListener('click', function(event){
 x.addEventListener('click', function(event){
     scores -= 200
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -234,6 +259,7 @@ let zz = document.querySelector("#truth");
 y.addEventListener('click', function(event){
     scores -= 200
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -242,6 +268,7 @@ y.addEventListener('click', function(event){
 z.addEventListener('click', function(event){
     scores -= 200
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -249,6 +276,7 @@ z.addEventListener('click', function(event){
 zz.addEventListener('click', function(event){
     scores += 200
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -261,6 +289,7 @@ let a3 = document.querySelector("#mad");
 a1.addEventListener('click', function(event){
     scores += 200
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -269,6 +298,7 @@ a1.addEventListener('click', function(event){
 a2.addEventListener('click', function(event){
     scores -= 200
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -276,6 +306,7 @@ a2.addEventListener('click', function(event){
 a3.addEventListener('click', function(event){
     scores -= 200
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -288,6 +319,7 @@ let b3 = document.querySelector("#bw");
 b1.addEventListener('click', function(event){
     scores += 300
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -296,6 +328,7 @@ b1.addEventListener('click', function(event){
 b2.addEventListener('click', function(event){
     scores -= 300
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -303,6 +336,7 @@ b2.addEventListener('click', function(event){
 b3.addEventListener('click', function(event){
     scores -= 300
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -315,6 +349,7 @@ let c3 = document.querySelector("#ls");
 c1.addEventListener('click', function(event){
     scores -= 300
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -323,6 +358,7 @@ c1.addEventListener('click', function(event){
 c2.addEventListener('click', function(event){
     scores += 300
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -330,6 +366,7 @@ c2.addEventListener('click', function(event){
 c3.addEventListener('click', function(event){
     scores -= 300
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -342,6 +379,7 @@ let cc3 = document.querySelector("#ff");
 cc1.addEventListener('click', function(event){
     scores += 300
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -350,6 +388,7 @@ cc1.addEventListener('click', function(event){
 cc2.addEventListener('click', function(event){
     scores -= 300
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -357,6 +396,7 @@ cc2.addEventListener('click', function(event){
 cc3.addEventListener('click', function(event){
     scores -= 300
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -369,6 +409,7 @@ let d3 = document.querySelector("#cool");
 dd.addEventListener('click', function(event){
     scores -= 300
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -377,6 +418,7 @@ dd.addEventListener('click', function(event){
 d2.addEventListener('click', function(event){
     scores -= 300
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -384,6 +426,7 @@ d2.addEventListener('click', function(event){
 d3.addEventListener('click', function(event){
     scores += 300
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -396,6 +439,7 @@ let e3 = document.querySelector("#vvv");
 ee.addEventListener('click', function(event){
     scores -= 300
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -404,6 +448,7 @@ ee.addEventListener('click', function(event){
 e2.addEventListener('click', function(event){
     scores += 300
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);
@@ -411,6 +456,7 @@ e2.addEventListener('click', function(event){
 e3.addEventListener('click', function(event){
     scores -= 300
     points.innerHTML = scores;
+    checkWin();
 
     const eventTarget = event.target.getAttribute("data-parent");
     disableButton(eventTarget);

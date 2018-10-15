@@ -184,6 +184,8 @@ body {
     text-align: center;
 }
 
-
+.disabled {
+    visibility: hidden;
+}
 
 
