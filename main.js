@@ -5,270 +5,413 @@ let a = document.querySelector("#answer");
 let b = document.querySelector("#no");
 let c = document.querySelector("#no2");
 
-    a.addEventListener('click', function(){
-        scores += 100
-        points.innerHTML = scores
-        if(points.innerHTML >=1000) {
-            alert('WINNER')
-        }            
-        })
-    b.addEventListener('click', function(){
-        scores -= 100
-        points.innerHTML = scores
-    })
-    c.addEventListener('click', function(){
-        scores -= 100
-        points.innerHTML = scores
-    })
+// function to check if the game is over or not
+function checkWin() {
+    if(points.innerHTML >=1000) {
+        alert('WINNER');
+    }
+}
 
-    let d = document.querySelector("#wrong");
-    let e = document.querySelector("#right");
-    let f = document.querySelector("#wrong2");
+function disableButton(target) {
+    const targetButton = document.getElementById(target);
+    targetButton.classList.add("disabled");
+}
 
-    d.addEventListener('click', function(){
-        scores -= 100
-        points.innerHTML = scores
-                     
-        })
-    e.addEventListener('click', function(){
-        scores += 100
-        points.innerHTML = scores
-    })
-    f.addEventListener('click', function(){
-        scores -= 100
-        points.innerHTML = scores
-    })
+a.addEventListener('click', function(event){
+    scores += 100
+    points.innerHTML = scores
 
-    let g = document.querySelector("#nope");
-    let h = document.querySelector("#nope2");
-    let i = document.querySelector("#correct");
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+    });
+b.addEventListener('click', function(event){
+    scores -= 100
+    points.innerHTML = scores
 
-    g.addEventListener('click', function(){
-        scores -= 100
-        points.innerHTML = scores
-                     
-        })
-    h.addEventListener('click', function(){
-        scores -= 100
-        points.innerHTML = scores
-    })
-    i.addEventListener('click', function(){
-        scores += 100
-        points.innerHTML = scores
-    })
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+});
+c.addEventListener('click', function(event){
+    scores -= 100
+    points.innerHTML = scores
 
-    let j = document.querySelector("#correct2");
-    let k = document.querySelector("#incorrect");
-    let l = document.querySelector("#incorrect2");
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+});
 
-    j.addEventListener('click', function(){
-        scores += 100
-        points.innerHTML = scores
-                     
-        })
-    k.addEventListener('click', function(){
-        scores -= 100
-        points.innerHTML = scores
-    })
-    l.addEventListener('click', function(){
-        scores -= 100
-        points.innerHTML = scores
-    })
+let d = document.querySelector("#wrong");
+let e = document.querySelector("#right");
+let f = document.querySelector("#wrong2");
 
-    let m = document.querySelector("#bad");
-    let n = document.querySelector("#good");
-    let o = document.querySelector("#bad2");
+d.addEventListener('click', function(event){
+    scores -= 100;
+    points.innerHTML = scores;
+    
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);         
+    });
+e.addEventListener('click', function(event){
+    scores += 100;
+    points.innerHTML = scores;
+    
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+});
+f.addEventListener('click', function(event){
+    scores -= 100;
+    points.innerHTML = scores;
+    
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+});
 
-    m.addEventListener('click', function(){
-        scores -= 100
-        points.innerHTML = scores
-                     
-        })
-    n.addEventListener('click', function(){
-        scores += 100
-        points.innerHTML = scores
-    })
-    o.addEventListener('click', function(){
-        scores -= 100
-        points.innerHTML = scores
-    })
+let g = document.querySelector("#nope");
+let h = document.querySelector("#nope2");
+let i = document.querySelector("#correct");
 
-    let p = document.querySelector("#green");
-    let q = document.querySelector("#red2");
-    let r = document.querySelector("#red");
+g.addEventListener('click', function(event){
+    scores -= 100
+    points.innerHTML = scores;
 
-    p.addEventListener('click', function(){
-        scores += 200
-        points.innerHTML = scores
-                     
-        })
-    q.addEventListener('click', function(){
-        scores -= 200
-        points.innerHTML = scores
-    })
-    r.addEventListener('click', function(){
-        scores -= 200
-        points.innerHTML = scores
-    })
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+                    
+    });
+h.addEventListener('click', function(event){
+    scores -= 100
+    points.innerHTML = scores;
 
-    let s = document.querySelector("#stop");
-    let t = document.querySelector("#go");
-    let u = document.querySelector("#stop2");
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+});
+i.addEventListener('click', function(event){
+    scores += 100
+    points.innerHTML = scores;
 
-    s.addEventListener('click', function(){
-        scores -= 200
-        points.innerHTML = scores
-                     
-        })
-    t.addEventListener('click', function(){
-        scores += 200
-        points.innerHTML = scores
-    })
-    u.addEventListener('click', function(){
-        scores -= 200
-        points.innerHTML = scores
-    })
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+});
 
-    let v = document.querySelector("#true");
-    let w = document.querySelector("#false");
-    let x = document.querySelector("#false2");
+let j = document.querySelector("#correct2");
+let k = document.querySelector("#incorrect");
+let l = document.querySelector("#incorrect2");
 
-    v.addEventListener('click', function(){
-        scores += 200
-        points.innerHTML = scores
-                     
-        })
-    w.addEventListener('click', function(){
-        scores -= 200
-        points.innerHTML = scores
-    })
-    x.addEventListener('click', function(){
-        scores -= 200
-        points.innerHTML = scores
-    })
+j.addEventListener('click', function(event){
+    scores += 100
+    points.innerHTML = scores;
 
-    let y = document.querySelector("#null");
-    let z = document.querySelector("#null2");
-    let zz = document.querySelector("#truth");
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+                    
+});
+k.addEventListener('click', function(event){
+    scores -= 100
+    points.innerHTML = scores;
 
-    y.addEventListener('click', function(){
-        scores -= 200
-        points.innerHTML = scores
-                     
-        })
-    z.addEventListener('click', function(){
-        scores -= 200
-        points.innerHTML = scores
-    })
-    zz.addEventListener('click', function(){
-        scores += 200
-        points.innerHTML = scores
-    })
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+});
+l.addEventListener('click', function(event){
+    scores -= 100
+    points.innerHTML = scores;
 
-    let a1 = document.querySelector("#nice");
-    let a2 = document.querySelector("#mal");
-    let a3 = document.querySelector("#mad");
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+});
 
-    a1.addEventListener('click', function(){
-        scores += 200
-        points.innerHTML = scores
-                     
-        })
-    a2.addEventListener('click', function(){
-        scores -= 200
-        points.innerHTML = scores
-    })
-    a3.addEventListener('click', function(){
-        scores -= 200
-        points.innerHTML = scores
-    })
+let m = document.querySelector("#bad");
+let n = document.querySelector("#good");
+let o = document.querySelector("#bad2");
 
-    let b1 = document.querySelector("#gg");
-    let b2 = document.querySelector("#bb");
-    let b3 = document.querySelector("#bw");
+m.addEventListener('click', function(event){
+    scores -= 100
+    points.innerHTML = scores;
 
-    b1.addEventListener('click', function(){
-        scores += 300
-        points.innerHTML = scores
-                     
-        })
-    b2.addEventListener('click', function(){
-        scores -= 300
-        points.innerHTML = scores
-    })
-    b3.addEventListener('click', function(){
-        scores -= 300
-        points.innerHTML = scores
-    })
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+                    
+});
+n.addEventListener('click', function(event){
+    scores += 100
+    points.innerHTML = scores;
 
-    let c1 = document.querySelector("#ll");
-    let c2 = document.querySelector("#gg");
-    let c3 = document.querySelector("#ls");
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+});
+o.addEventListener('click', function(event){
+    scores -= 100
+    points.innerHTML = scores;
 
-    c1.addEventListener('click', function(){
-        scores -= 300
-        points.innerHTML = scores
-                     
-        })
-    c2.addEventListener('click', function(){
-        scores += 300
-        points.innerHTML = scores
-    })
-    c3.addEventListener('click', function(){
-        scores -= 300
-        points.innerHTML = scores
-    })
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+});
 
-    let cc1 = document.querySelector("#aa");
-    let cc2 = document.querySelector("#flunk");
-    let cc3 = document.querySelector("#ff");
+let p = document.querySelector("#green");
+let q = document.querySelector("#red2");
+let r = document.querySelector("#red");
 
-    cc1.addEventListener('click', function(){
-        scores += 300
-        points.innerHTML = scores
-                     
-        })
-    cc2.addEventListener('click', function(){
-        scores -= 300
-        points.innerHTML = scores
-    })
-    cc3.addEventListener('click', function(){
-        scores -= 300
-        points.innerHTML = scores
-    })
+p.addEventListener('click', function(event){
+    scores += 200
+    points.innerHTML = scores;
 
-    let dd = document.querySelector("#lame");
-    let d2 = document.querySelector("#lame2");
-    let d3 = document.querySelector("#cool");
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+                    
+});
+q.addEventListener('click', function(event){
+    scores -= 200
+    points.innerHTML = scores;
 
-    dd.addEventListener('click', function(){
-        scores -= 300
-        points.innerHTML = scores
-                     
-        })
-    d2.addEventListener('click', function(){
-        scores -= 300
-        points.innerHTML = scores
-    })
-    d3.addEventListener('click', function(){
-        scores += 300
-        points.innerHTML = scores
-    })
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+});
+r.addEventListener('click', function(event){
+    scores -= 200
+    points.innerHTML = scores;
 
-    let ee = document.querySelector("#ccc");
-    let e2 = document.querySelector("#xxx");
-    let e3 = document.querySelector("#vvv");
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+});
 
-    ee.addEventListener('click', function(){
-        scores -= 300
-        points.innerHTML = scores
-                     
-        })
-    e2.addEventListener('click', function(){
-        scores += 300
-        points.innerHTML = scores
+let s = document.querySelector("#stop");
+let t = document.querySelector("#go");
+let u = document.querySelector("#stop2");
+
+s.addEventListener('click', function(event){
+    scores -= 200
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+                    
     })
-    e3.addEventListener('click', function(){
-        scores -= 300
-        points.innerHTML = scores
+t.addEventListener('click', function(event){
+    scores += 200
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+u.addEventListener('click', function(event){
+    scores -= 200
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+
+let v = document.querySelector("#true");
+let w = document.querySelector("#false");
+let x = document.querySelector("#false2");
+
+v.addEventListener('click', function(event){
+    scores += 200
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+                    
     })
+w.addEventListener('click', function(event){
+    scores -= 200
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+x.addEventListener('click', function(event){
+    scores -= 200
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+
+let y = document.querySelector("#null");
+let z = document.querySelector("#null2");
+let zz = document.querySelector("#truth");
+
+y.addEventListener('click', function(event){
+    scores -= 200
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+                    
+    })
+z.addEventListener('click', function(event){
+    scores -= 200
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+zz.addEventListener('click', function(event){
+    scores += 200
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+
+let a1 = document.querySelector("#nice");
+let a2 = document.querySelector("#mal");
+let a3 = document.querySelector("#mad");
+
+a1.addEventListener('click', function(event){
+    scores += 200
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+                    
+    })
+a2.addEventListener('click', function(event){
+    scores -= 200
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+a3.addEventListener('click', function(event){
+    scores -= 200
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+
+let b1 = document.querySelector("#gg");
+let b2 = document.querySelector("#bb");
+let b3 = document.querySelector("#bw");
+
+b1.addEventListener('click', function(event){
+    scores += 300
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+                    
+    })
+b2.addEventListener('click', function(event){
+    scores -= 300
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+b3.addEventListener('click', function(event){
+    scores -= 300
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+
+let c1 = document.querySelector("#ll");
+let c2 = document.querySelector("#gg");
+let c3 = document.querySelector("#ls");
+
+c1.addEventListener('click', function(event){
+    scores -= 300
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+                    
+    })
+c2.addEventListener('click', function(event){
+    scores += 300
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+c3.addEventListener('click', function(event){
+    scores -= 300
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+
+let cc1 = document.querySelector("#aa");
+let cc2 = document.querySelector("#flunk");
+let cc3 = document.querySelector("#ff");
+
+cc1.addEventListener('click', function(event){
+    scores += 300
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+                    
+    })
+cc2.addEventListener('click', function(event){
+    scores -= 300
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+cc3.addEventListener('click', function(event){
+    scores -= 300
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+
+let dd = document.querySelector("#lame");
+let d2 = document.querySelector("#lame2");
+let d3 = document.querySelector("#cool");
+
+dd.addEventListener('click', function(event){
+    scores -= 300
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+                    
+    })
+d2.addEventListener('click', function(event){
+    scores -= 300
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+d3.addEventListener('click', function(event){
+    scores += 300
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+
+let ee = document.querySelector("#ccc");
+let e2 = document.querySelector("#xxx");
+let e3 = document.querySelector("#vvv");
+
+ee.addEventListener('click', function(event){
+    scores -= 300
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+                    
+    })
+e2.addEventListener('click', function(event){
+    scores += 300
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
+e3.addEventListener('click', function(event){
+    scores -= 300
+    points.innerHTML = scores;
+
+    const eventTarget = event.target.getAttribute("data-parent");
+    disableButton(eventTarget);
+})
